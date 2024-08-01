@@ -29,7 +29,7 @@ public class RabbitMQClientService : IDisposable
         }
 
         _channel = _connection.CreateModel();
-        _channel.ExchangeDeclare(ExchangeName, type: "direct", false);
+        _channel.ExchangeDeclare(ExchangeName, type: "direct", true,false);
 
         _channel.QueueDeclare(QueueName, true, false, false, null);
 

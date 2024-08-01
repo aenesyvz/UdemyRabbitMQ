@@ -15,5 +15,5 @@ public class Product
     [Range(1, 100)]
     public int Stock { get; set; }
     [StringLength(100)]
-    public string ImageName { get; set; }
+    public string? ImageName { get; set; }
 }
